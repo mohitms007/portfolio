@@ -5,9 +5,9 @@ description: Design-minded software engineer focused on building beautiful inter
 url: https://mohitms007.github.io/
 baseurl: 'portfolio-old'
 email: mohitms015@gmail.com
-cover: https://mohitms007.github.io/img/og.png
-logo: https://mohitms007.github.io/img/emojis/technologist.png
-resume: https://mohitms007.github.io/resume.pdf
+cover: https://mohitms007.github.io/portfolio-old/img/og.png
+logo: https://mohitms007.github.io/portfolio-old/img/emojis/technologist.png
+resume: https://mohitms007.github.io/portfolio-old/resume.pdf
 social:
   - title: email
     url: mailto:mohitms015@gmail.com
