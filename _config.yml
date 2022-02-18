@@ -1,0 +1,43 @@
+# Site settings
+name: Mohit Sharma
+title: Mohit Sharma | Software Engineer
+description: Design-minded software engineer focused on building beautiful interfaces,experiences and great system design 
+url: https://mohitms007.github.io/
+baseurl: ''
+email: mohitms015@gmail.com
+cover: https://mohitms007.github.io/img/og.png
+logo: https://mohitms007.github.io/img/emojis/technologist.png
+resume: https://mohitms007.github.io/resume.pdf
+social:
+  - title: email
+    url: mailto:mohitms015@gmail.com
+  - title: twitter
+    url: https://twitter.com/mohitms_
+  - title: instagram
+    url: https://instagram.com/mohitms_
+  - title: github
+    url: https://github.com/mohitms007
+  - title: linkedin
+    url: https://www.linkedin.com/in/mohit-sharma-4b25531a9/
+
+# Build settings
+markdown: kramdown
+
+exclude:
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - '*.gemspec'
+  - 'README.md'
+  - 'node_modules'
+  - 'build'
+  - 'gulpfile.js'
+  - 'package.json'
+
+keep_files:
+  - 'CNAME'
+  - '.git'
+  - '.gitignore'
+
+plugins_dir:
+  - jekyll-minifier
+  - jekyll-sitemap
