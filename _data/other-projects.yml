@@ -1,0 +1,32 @@
+- name: TreadStone Web App
+  url: https://pure-cliffs-04868.herokuapp.com/
+  code: https://github.com/mohitms007/Treadstone-Web
+  description:  a Hiking Tour booking application with ability to perform CRUD operations on different information pertaining
+  used:
+    - thing: Node.js
+    - thing: EJS
+    - thing: MongoDB
+    - thing: JWT
+    - thing: Bcrypt
+
+- name: Cloth Fits
+  url: https://cloth-fits-79soq1cbg-mohitms007.vercel.app/
+  code: https://github.com/mohitms007/Cloth-Fits
+  description: A full stack online clothing store complete with real credit checkout and functions such as searching, selling, cart and auth.
+  used:
+    - thing: Next.js
+    - thing: Express.js
+    - thing: Keystone JS
+    - thing: GraphQL
+    - thing: KeyStone Auth
+
+- name: Expanse Next App
+  url: http://expanse-next-app.vercel.app/
+  code: https://github.com/mohitms007/Expanse-next-app
+  description: Created a Space Research application to get the daily updates related to space and query for different data.
+  used:
+    - thing: React
+    - thing: Nasa API
+    - thing: Next.js
+    - thing: Tailwind CSS
+    - thing: SSR

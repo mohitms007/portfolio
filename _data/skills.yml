@@ -1,0 +1,44 @@
+languages:
+  - item: JavaScript (ES6)
+  - item: TypeScript
+  - item: C++
+  - item: Java
+  - item: Python
+  - item: Ruby
+
+frameworks:
+  - item: Next.js
+  - item: React
+  - item: Express
+  - item: Sails JS
+  - item: React Native
+  - item: Ruby on Rails
+
+
+libraries:
+  - item: Material UI
+  - item: Chakra UI
+  - item: Express
+  - item: Sails JS
+  - item: React Native
+  - item: Tailwind CSS
+  - item: Redux/Redux Saga
+
+
+tools:
+  - item: Bash
+  - item: Git & Github
+  - item: Command Line
+  - item: Chrome DevTools
+  - item: Postman
+  - item: MongoDB
+  - item: Linux
+  - item: MYSQL
+  - item: GraphQL
+
+concepts:
+  - item: REST
+  - item: MVC
+  - item: Cloud
+  - item: Data Structures
+  - item: System Design
