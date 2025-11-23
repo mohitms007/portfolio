@@ -1,8 +1,38 @@
+- company: Monash University
+  url: https://www.monash.edu/
+  time: Nov 2025 - Feb 2026
+  position: Summer Software Engineering Intern
+  details:
+    - Working on MapLink, a Next.js-based contract mapping platform for Australian government infrastructure projects, enabling real-time visualization and management of supervised government contracts.
+    - Developing interactive map interfaces and geospatial data visualization features using Next.js, React, and modern mapping libraries to streamline project tracking and reporting.
+    - Collaborating with government stakeholders and university researchers to deliver a scalable, production-ready solution for managing large-scale infrastructure data across Australia.
+
+- company: Josh Technology Group
+  url: https://www.joshtechnologygroup.com/
+  time: Jan 2023 - Jul 2025
+  position: Software Development Engineer (Frontend)
+  details:
+    - Designed and optimized a resume PDF system with React and Python, increasing speed by 40% and reducing errors by 25%; built reusable MJML components for consistent, faster email delivery.
+    - Migrated a critical JavaScript codebase between repositories with zero downtime, improving deployment efficiency by 35% and fixing major issues for US clients, resolving 30% of critical bugs.
+    - Mentored junior developers, led technical interviews, and facilitated agile sprints, improving team delivery and meeting tight deadlines.
+
+- company: Salt — YC (W'22)
+  url: https://www.ycombinator.com/companies/salt
+  time: Jul 2022 - Oct 2022
+  position: Software Engineer Intern
+  details:
+    - Created an in-house automation service for document processing and money transfers, cutting manual effort by 50% and streamlining banking workflows with secure end-to-end flows.
+    - Built a drag-and-drop forms library and the Paper-Do file sync tool; delivered a responsive frontend with Material-UI and React plus a robust Flask backend.
+
 - company: Hey Coach
   url: https://heycoach.in/
-  time: June - Sept 2021
-  position: Software Engineer | Full Stack
-  
+  time: Jun 2021 - Aug 2021
+  position: Fullstack Software Engineer Intern
+  details:
+    - Built the core operations platform using React and Ruby on Rails, supporting 100+ students with content, schedules, and progress tracking.
+    - Implemented role-based authorization, boosting security by 30%; managed complex database queries, migrations, and REST APIs.
+    - Developed reusable frontend modules, integrated tools like Google and file upload APIs, and worked directly with the founder on product design.
+
 - company: Girlscript Summer of Code
   url: https://gssoc.girlscript.tech/
   time: Jan - March 2021

@@ -1,7 +1,41 @@
+- name: MapLink
+  url: https://github.com/mohitms007/maplink
+  code: https://github.com/mohitms007/maplink
+  description: A Next.js-based contract mapping platform for Australian government infrastructure projects, enabling real-time visualization and management of supervised government contracts.
+  used:
+    - thing: Next.js
+    - thing: React
+    - thing: Geospatial APIs
+    - thing: Mapping Libraries
+    - thing: TypeScript
+
+- name: Linq Nutrition
+  url: https://www.linqnutrition.com/
+  code:
+  description: Worked on fixing critical account management issues for the Mid-Day Meal USA program, ensuring seamless operations for school nutrition services.
+  used:
+    - thing: .NET
+    - thing: Angular
+    - thing: SQL Server
+    - thing: C#
+    - thing: REST APIs
+
+- name: GeoPins
+  url: https://github.com/mohitms007/geopins
+  code: https://github.com/mohitms007/geopins
+  description: Built a real-time geolocation app for sharing live pins and locations with integrated Google OAuth2 for secure login and Cloudinary for media handling.
+  used:
+    - thing: React
+    - thing: Node.js
+    - thing: GraphQL
+    - thing: MongoDB
+    - thing: Cloudinary
+    - thing: Material-UI
+
 - name: TreadStone Web App
   url: https://pure-cliffs-04868.herokuapp.com/
   code: https://github.com/mohitms007/Treadstone-Web
-  description:  a Hiking Tour booking application with ability to perform CRUD operations on different information pertaining
+  description: a Hiking Tour booking application with ability to perform CRUD operations on different information pertaining
   used:
     - thing: Node.js
     - thing: EJS

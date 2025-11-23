@@ -18,18 +18,20 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: $white;
+  background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
   color: $dark-grey;
   font-family: $Apercu;
-  line-height: 1.5;
+  line-height: 1.6;
   width: 100%;
+  font-size: 18px;
+  scroll-behavior: smooth;
 
   &.night {
-    background-color: $night;
+    background: linear-gradient(135deg, $night 0%, #16213e 100%);
     color: $slate;
     ::selection {
-      color: $black;
-      background: $yellow;
+      color: $night;
+      background: $accent;
     }
     .switch-wrapper {
       .sun {
@@ -51,7 +53,7 @@ body {
       color: $off-white;
     }
     .section__content .underline-link:after {
-      background: $off-white;
+      background: $accent;
     }
   }
 }
@@ -96,18 +98,19 @@ strong {
 .section {
   display: flex;
   justify-content: center;
-  padding: 100px 170px;
+  padding: 120px 170px;
+  position: relative;
   @include thirteen {
     padding: 100px;
   }
   @include desktop {
-    padding: 50px;
+    padding: 70px 50px;
   }
   @include tablet {
     display: block;
   }
   @include mobile {
-    padding: 50px 35px;
+    padding: 60px 35px;
   }
   &__title {
     flex-shrink: 0;
@@ -117,7 +120,8 @@ strong {
     text-transform: uppercase;
     text-align: right;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 2.5px;
+    font-size: 0.9rem;
     @include desktop {
       margin-right: 50px;
     }
@@ -127,13 +131,14 @@ strong {
     @include tablet {
       text-align: left;
       width: auto;
+      margin-bottom: 20px;
     }
   }
   &__content {
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 1.05rem;
     width: 100%;
-    max-width: 650px;
+    max-width: 700px;
     @include tablet {
       padding-top: 30px;
       padding-left: 50px;
@@ -143,7 +148,8 @@ strong {
     }
     p {
       margin-top: 0;
-      margin-bottom: 25px;
+      margin-bottom: 28px;
+      line-height: 1.7;
     }
     .underline-link {
       position: relative;

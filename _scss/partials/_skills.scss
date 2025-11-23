@@ -1,24 +1,45 @@
 .skills {
   .skillz {
-    display: flex;
-    justify-content: space-between;
-    @include weird-medium {
-      flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 25px;
     }
     &__category {
-      @include weird-medium {
-        width: 47%;
-        margin-right: 5px;
-        margin-bottom: 25px;
-      }
       &__label {
         font-weight: 700;
-        color: $black;
+        color: $blue;
         text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+        font-size: 0.85rem;
+        display: block;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
       }
       &__item {
-        margin: 3px 0;
-        font-size: 0.9rem;
+        margin: 8px 0;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        padding-left: 15px;
+        position: relative;
+        &:before {
+          content: '▹';
+          position: absolute;
+          left: 0;
+          color: $blue;
+          font-size: 1.1rem;
+          line-height: 1.4;
+        }
       }
     }
   }
