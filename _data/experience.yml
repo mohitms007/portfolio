@@ -1,28 +1,46 @@
 - company: Monash University
   url: https://www.monash.edu/
-  time: Nov 2025 - Feb 2026
-  position: Summer Software Engineering Intern
+  time: Feb 2026 - Present
+  position: Teaching Associate
   details:
-    - Working on MapLink, a Next.js-based contract mapping platform for Australian government infrastructure projects, enabling real-time visualization and management of supervised government contracts.
-    - Developing interactive map interfaces and geospatial data visualization features using Next.js, React, and modern mapping libraries to streamline project tracking and reporting.
-    - Collaborating with government stakeholders and university researchers to deliver a scalable, production-ready solution for managing large-scale infrastructure data across Australia.
+    - Teaching FIT1050 Web Fundamentals and FIT3178 iOS Development.
+
+- company: Monash University
+  url: https://www.monash.edu/
+  time: Nov 2025 - Feb 2026
+  position: Research Software Engineer Intern (Summer Internship Scholar)
+  details:
+    - Developed a real-time energy analytics platform that ingests building consumption data via Apache Kafka and renders it as 3D visualisations broken down by usage category (Next.js, TypeScript).
+    - Built MapLink, a map-based freelance marketplace with a multi-stage job state machine, backed by Python REST APIs and JWT authentication (FastAPI, Mapbox API, Next.js, Stripe Payments).
+
+- company: Nudge (Antler Launchpad)
+  url: https://github.com/mohitmsh/nudge-insights
+  time: Dec 2025 - Feb 2026
+  position: Software Engineer (Contract)
+  details:
+    - Shipped an iOS MVP for an AI budgeting app to 200 beta testers in under 1 month; the product was accepted into Antler Launchpad and covered by Monash IT News (Swift, SwiftUI).
+    - Built an app-blocking feature that shields spending-prone apps from opening to interrupt impulse purchases (Screen Time API - FamilyControls, ManagedSettings).
+    - Integrated the OpenAI API to analyse spending patterns and generate budget recommendations and alerts, served by backend services on AWS (Python, FastAPI, AWS EC2).
 
 - company: Josh Technology Group
   url: https://www.joshtechnologygroup.com/
   time: Jan 2023 - Jul 2025
-  position: Software Development Engineer (Frontend)
+  position: Software Engineer
   details:
-    - Designed and optimized a resume PDF system with React and Python, increasing speed by 40% and reducing errors by 25%; built reusable MJML components for consistent, faster email delivery.
-    - Migrated a critical JavaScript codebase between repositories with zero downtime, improving deployment efficiency by 35% and fixing major issues for US clients, resolving 30% of critical bugs.
-    - Mentored junior developers, led technical interviews, and facilitated agile sprints, improving team delivery and meeting tight deadlines.
+    - Delivered features across 3 enterprise products serving 50K+ US users (React, Angular, Next.js, Django, .NET).
+    - Rebuilt a legacy XML/HTML resume service as a serverless microservice, improving PDF generation speed by 40% across 10K+ documents/month by moving rendering off the frontend.
+    - Led a zero-downtime migration of critical JavaScript codebases between repositories, reducing CI/CD release delays by 35% after validating the approach on a single service.
+    - Resolved 30%+ of P0 production incidents for LINQ by debugging C#/.NET services, profiling memory usage and slow database calls, and validating fixes with Sentry.
+    - Co-developed shared frontend libraries as private npm packages (Redux state, component testing, MJML email) adopted by 5 teams, cutting campaign delivery time by 60%.
+    - Mentored 3 junior engineers, conducted 20+ technical interviews, and ran sprint planning across an 8-person team.
 
 - company: Salt — YC (W'22)
   url: https://www.ycombinator.com/companies/salt
   time: Jul 2022 - Oct 2022
   position: Software Engineer Intern
   details:
-    - Created an in-house automation service for document processing and money transfers, cutting manual effort by 50% and streamlining banking workflows with secure end-to-end flows.
-    - Built a drag-and-drop forms library and the Paper-Do file sync tool; delivered a responsive frontend with Material-UI and React plus a robust Flask backend.
+    - Built a document-automation product across the stack, from the frontend to a Python OCR backend that converts submitted forms into structured documents, cutting manual processing by 50% across 1K+ daily transactions (React, Python).
+    - Developed a drag-and-drop form builder and a Google Drive-style document-generation interface (React, Material-UI).
 
 - company: Hey Coach
   url: https://heycoach.in/

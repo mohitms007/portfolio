@@ -4,7 +4,11 @@
     {% for project in site.data.other-projects %}
     <div class="project">
       <div class="project__name">
+        {% if project.url %}
         <a href="{{project.url}}" target="_blank" class="arrow-link">{{project.name}}</a>
+        {% else %}
+        {{project.name}}
+        {% endif %}
       </div>
       <p>{{project.description}}</p>
       <div class="project__used">

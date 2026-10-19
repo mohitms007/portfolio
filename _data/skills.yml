@@ -1,48 +1,46 @@
 proficient:
-  - item: C++
-  - item: JavaScript (ES6)
   - item: TypeScript
+  - item: JavaScript (ES6)
+  - item: Python
   - item: React
+  - item: Redux
+  - item: Next.js
   - item: Node.js
   - item: REST APIs
-  - item: Material-UI
-  - item: Git & GitHub
 
 intermediate:
-  - item: Java
-  - item: React Native
-  - item: Ruby on Rails
-  - item: Next.js
-  - item: JWT
-  - item: .NET 4.8
+  - item: C#
+  - item: .NET
+  - item: Swift
+  - item: SwiftUI
   - item: Angular
-  - item: SQL (MySQL, SQL Server)
-  - item: System Design
-  - item: MongoDB
+  - item: Django
+  - item: FastAPI
   - item: GraphQL
-  - item: Redux/Redux Saga
+  - item: SQL (PostgreSQL, SQL Server)
+  - item: MongoDB
+  - item: Ruby on Rails
 
 beginner:
-  - item: Python
-  - item: AWS
+  - item: Apache Kafka
+  - item: GCP
   - item: GitHub Actions
-  - item: Integration Testing
+  - item: Java
   - item: Go
-  - item: Sails JS
 
 tools:
   - item: Git & GitHub
-  - item: Postman
-  - item: Chrome DevTools
-  - item: VS Code
-  - item: Command Line/Bash
+  - item: AWS (Lambda, S3, DynamoDB, Cognito, EC2)
   - item: Docker
-  - item: Linux
+  - item: Sentry
+  - item: Postman
+  - item: VS Code
+  - item: Linux & Bash
 
 concepts:
-  - item: REST APIs
   - item: System Design
-  - item: MVC Architecture
-  - item: Cloud Computing
+  - item: Serverless Architecture
+  - item: Microservices
+  - item: Distributed Training
   - item: Data Structures
   - item: Agile/Scrum

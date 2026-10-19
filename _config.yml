@@ -1,7 +1,7 @@
 # Site settings
 name: Mohit Sharma
 title: Mohit Sharma | Software Engineer
-description: Design-minded software engineer focused on building beautiful interfaces,experiences and great system design 
+description: Software engineer and Master of IT (Thesis) student at Monash University, building full-stack web, iOS and cloud applications
 url: https://mohitms007.github.io/
 baseurl: '/portfolio'
 email: mohitms015@gmail.com
@@ -11,14 +11,12 @@ resume: https://mohitms007.github.io/portfolio/Mohit_Resume.pdf
 social:
   - title: email
     url: mailto:mohitms015@gmail.com
-  - title: twitter
-    url: https://twitter.com/
   - title: instagram
     url: https://instagram.com/mohitms_
   - title: github
     url: https://github.com/mohitms007
   - title: linkedin
-    url: https://www.linkedin.com/in/mohit-sharma-4b25531a9/
+    url: https://www.linkedin.com/in/mohitms01/
 
 # Build settings
 markdown: kramdown

@@ -1,13 +1,13 @@
 - name: MapLink
-  url: https://github.com/mohitms007/maplink
-  code: https://github.com/mohitms007/maplink
-  description: A Next.js-based contract mapping platform for Australian government infrastructure projects, enabling real-time visualization and management of supervised government contracts.
+  url:
+  code:
+  description: A map-based freelance marketplace with a multi-stage job state machine, Python REST APIs and JWT authentication, built during my Monash summer internship.
   used:
     - thing: Next.js
-    - thing: React
-    - thing: Geospatial APIs
-    - thing: Mapping Libraries
-    - thing: TypeScript
+    - thing: FastAPI
+    - thing: Mapbox API
+    - thing: Stripe
+    - thing: JWT
 
 - name: Linq Nutrition
   url: https://www.linqnutrition.com/
@@ -21,8 +21,8 @@
     - thing: REST APIs
 
 - name: GeoPins
-  url: https://github.com/mohitms007/geopins
-  code: https://github.com/mohitms007/geopins
+  url: https://github.com/mohitms007/GeoPins
+  code: https://github.com/mohitms007/GeoPins
   description: Built a real-time geolocation app for sharing live pins and locations with integrated Google OAuth2 for secure login and Cloudinary for media handling.
   used:
     - thing: React
