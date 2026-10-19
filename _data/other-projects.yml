@@ -1,3 +1,23 @@
+- name: Nudge
+  url: https://github.com/mohitmsh/nudge-insights
+  code: https://github.com/mohitmsh/nudge-insights
+  description: An AI budgeting iOS app shipped to 200 beta testers in under a month and accepted into Antler Launchpad. It blocks spending-prone apps with the Screen Time API and uses the OpenAI API for budget insights.
+  used:
+    - thing: Swift
+    - thing: SwiftUI
+    - thing: FastAPI
+    - thing: OpenAI API
+    - thing: AWS EC2
+
+- name: Distributed LLM Training (Minor Thesis)
+  url: https://github.com/mohitmsh/MohitSharma_MinorThesis_DecentralizedLLMTraining
+  code: https://github.com/mohitmsh/MohitSharma_MinorThesis_DecentralizedLLMTraining
+  description: Master's research at Monash on efficient foundation model training over heterogeneous, geo-distributed GPU resources.
+  used:
+    - thing: Distributed Training
+    - thing: LLMs
+    - thing: GPU Systems
+
 - name: MapLink
   url:
   code:
@@ -19,18 +39,6 @@
     - thing: SQL Server
     - thing: C#
     - thing: REST APIs
-
-- name: GeoPins
-  url: https://github.com/mohitms007/GeoPins
-  code: https://github.com/mohitms007/GeoPins
-  description: Built a real-time geolocation app for sharing live pins and locations with integrated Google OAuth2 for secure login and Cloudinary for media handling.
-  used:
-    - thing: React
-    - thing: Node.js
-    - thing: GraphQL
-    - thing: MongoDB
-    - thing: Cloudinary
-    - thing: Material-UI
 
 - name: TreadStone Web App
   url: https://pure-cliffs-04868.herokuapp.com/
