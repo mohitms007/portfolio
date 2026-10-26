@@ -4,10 +4,9 @@ const cp = require('child_process');
 const jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 
 const scssPath = '_scss/**/*.scss';
-const jsPath = '_scripts/*.js';
 const templatePath = [
   '*.html',
-  '+(_includes|_layouts)/*.html',
+  '+(_includes|_layouts)/**/*.+(html|svg)',
   '*.yml',
   '_data/*.yml',
   '_posts/*',
@@ -45,7 +44,6 @@ module.exports = gulp => {
       });
 
       gulp.watch(scssPath, gulp.series(['sass', reloadBrowser]));
-      gulp.watch(jsPath, gulp.series(['scripts', reloadBrowser]));
       gulp.watch(templatePath, gulp.task('jekyll-rebuild'));
     })
   );

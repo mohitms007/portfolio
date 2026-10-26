@@ -1,57 +1,38 @@
 - company: Monash University
-  url: https://www.monash.edu/
-  time: Feb 2026 - Present
+  logo: monash.png
   position: Teaching Associate
+  time: Feb 2026 – Present
   details:
     - Teaching FIT1050 Web Fundamentals and FIT3178 iOS Development.
 
 - company: Monash University
-  url: https://www.monash.edu/
-  time: Nov 2025 - Feb 2026
-  position: Research Software Engineer Intern (Summer Internship Scholar)
+  logo: monash.png
+  position: Research Software Engineer Intern
+  time: Nov 2025 – Feb 2026
   details:
-    - Developed a real-time energy analytics platform that ingests building consumption data via Apache Kafka and renders it as 3D visualisations broken down by usage category (Next.js, TypeScript).
-    - Built MapLink, a map-based freelance marketplace with a multi-stage job state machine, backed by Python REST APIs and JWT authentication (FastAPI, Mapbox API, Next.js, Stripe Payments).
+    - Built a real-time energy analytics platform that ingests building consumption data through Apache Kafka and shows it as 3D visualisations.
+    - Built MapLink, a map-based freelance marketplace with a multi-stage job state machine, Python REST APIs and JWT authentication.
 
 - company: Nudge (Antler Launchpad)
-  url: https://github.com/mohitmsh/nudge-insights
-  time: Dec 2025 - Feb 2026
-  position: Software Engineer (Contract)
+  initial: N
+  position: Software Engineer
+  time: Dec 2025 – Feb 2026
   details:
-    - Shipped an iOS MVP for an AI budgeting app to 200 beta testers in under 1 month; the product was accepted into Antler Launchpad and covered by Monash IT News (Swift, SwiftUI).
-    - Built an app-blocking feature that shields spending-prone apps from opening to interrupt impulse purchases (Screen Time API - FamilyControls, ManagedSettings).
-    - Integrated the OpenAI API to analyse spending patterns and generate budget recommendations and alerts, served by backend services on AWS (Python, FastAPI, AWS EC2).
+    - Shipped the iOS MVP of an AI budgeting app to 200 beta testers in under a month. The product was accepted into Antler Launchpad.
+    - Used the OpenAI API to analyse spending and generate budget recommendations, served from FastAPI on AWS.
 
 - company: Josh Technology Group
-  url: https://www.joshtechnologygroup.com/
-  time: Jan 2023 - Jul 2025
+  logo: jtg.png
   position: Software Engineer
+  time: Jan 2023 – Jul 2025
   details:
-    - Delivered features across 3 enterprise products serving 50K+ US users (React, Angular, Next.js, Django, .NET).
-    - Rebuilt a legacy XML/HTML resume service as a serverless microservice, improving PDF generation speed by 40% across 10K+ documents/month by moving rendering off the frontend.
-    - Led a zero-downtime migration of critical JavaScript codebases between repositories, reducing CI/CD release delays by 35% after validating the approach on a single service.
-    - Resolved 30%+ of P0 production incidents for LINQ by debugging C#/.NET services, profiling memory usage and slow database calls, and validating fixes with Sentry.
-    - Co-developed shared frontend libraries as private npm packages (Redux state, component testing, MJML email) adopted by 5 teams, cutting campaign delivery time by 60%.
-    - Mentored 3 junior engineers, conducted 20+ technical interviews, and ran sprint planning across an 8-person team.
+    - Delivered features across 3 enterprise products serving 50K+ US users.
+    - Rebuilt a legacy resume service as a serverless microservice, making PDF generation 40% faster across 10K+ documents a month.
 
-- company: Salt — YC (W'22)
-  url: https://www.ycombinator.com/companies/salt
-  time: Jul 2022 - Oct 2022
+- company: Salt (YC W22)
+  logo: salt.png
   position: Software Engineer Intern
+  time: Jul 2022 – Oct 2022
   details:
-    - Built a document-automation product across the stack, from the frontend to a Python OCR backend that converts submitted forms into structured documents, cutting manual processing by 50% across 1K+ daily transactions (React, Python).
-    - Developed a drag-and-drop form builder and a Google Drive-style document-generation interface (React, Material-UI).
-
-- company: Hey Coach
-  url: https://heycoach.in/
-  time: Jun 2021 - Aug 2021
-  position: Fullstack Software Engineer Intern
-  details:
-    - Built the core operations platform using React and Ruby on Rails, supporting 100+ students with content, schedules, and progress tracking.
-    - Implemented role-based authorization, boosting security by 30%; managed complex database queries, migrations, and REST APIs.
-    - Developed reusable frontend modules, integrated tools like Google and file upload APIs, and worked directly with the founder on product design.
-
-- company: Girlscript Summer of Code
-  url: https://gssoc.girlscript.tech/
-  time: Jan - March 2021
-  position: Open Source Contributor
+    - Built a document-automation product, from the React frontend to a Python OCR backend, cutting manual processing by 50%.
+    - Built a drag-and-drop form builder and a document-generation interface.

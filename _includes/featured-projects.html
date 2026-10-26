@@ -1,53 +1,17 @@
 <section class="section" id="work">
-  <header class="section__head">
-    <h2 class="section__title">Selected work</h2>
-    <span class="section__meta">{{ site.data.featured | size }} projects</span>
-  </header>
-
-  {% assign lead = site.data.featured | first %}
-  <article class="card feature">
-    <a class="feature__media" href="{{lead.url}}" target="_blank">
-      <img src="{{site.baseurl}}/img/featured/projects/{{lead.image}}" alt="{{lead.alt}}" loading="lazy">
+  <h2 class="section__title">Work</h2>
+  {% for project in site.data.featured %}
+  {% if forloop.index == 2 %}<div class="work-grid">{% endif %}
+  <article class="work{% if forloop.first %} work--lead{% endif %}">
+    <a class="work__media" href="{{project.links[0].url}}" target="_blank" rel="noopener">
+      <img src="{{site.baseurl}}/img/featured/projects/{{project.image}}" alt="{{project.alt}}" width="1440" height="900" loading="{% if forloop.first %}eager{% else %}lazy{% endif %}">
     </a>
-    <div class="feature__body">
-      <div class="chip-row">
-        <span class="chip"><span class="dot dot--pass"></span>Live demo</span>
-        <span class="chip">{{lead.kind}}</span>
-      </div>
-      <h3 class="feature__title">{{lead.name}}</h3>
-      <p class="muted">{{lead.summary}}</p>
-      <dl class="meta-list meta-list--compact">
-        {% for fact in lead.facts %}
-        <div><dt>{{fact.label}}</dt><dd>{{fact.value}}</dd></div>
-        {% endfor %}
-      </dl>
-      <div class="tags">
-        {% for item in lead.stack %}<span class="tag">{{item}}</span>{% endfor %}
-      </div>
-      <div class="card__actions">
-        <a class="button button--primary" href="{{lead.url}}" target="_blank">Open demo</a>
-        <a class="button" href="{{lead.code}}" target="_blank">View code</a>
-      </div>
-    </div>
+    <h3 class="work__title">{{project.name}}</h3>
+    <p class="muted">{{project.summary}}</p>
+    <p class="work__links">
+      {% for link in project.links %}<a href="{{link.url}}" target="_blank" rel="noopener">{{link.label}}{% include icons/arrow-up-right.svg %}</a>{% endfor %}
+    </p>
   </article>
-
-  <div class="grid grid--3">
-    {% for project in site.data.featured offset:1 %}
-    <article class="card project">
-      <a class="project__media" href="{{project.url}}" target="_blank">
-        <img src="{{site.baseurl}}/img/featured/projects/{{project.image}}" alt="{{project.alt}}" loading="lazy">
-      </a>
-      <div class="project__body">
-        <div class="project__head">
-          <h3 class="project__title"><a href="{{project.url}}" target="_blank">{{project.name}}</a></h3>
-          <span class="chip">{{project.kind}}</span>
-        </div>
-        <p class="muted">{{project.summary}}</p>
-        <div class="tags">
-          {% for item in project.stack %}<span class="tag">{{item}}</span>{% endfor %}
-        </div>
-      </div>
-    </article>
-    {% endfor %}
-  </div>
+  {% if forloop.last and forloop.length > 1 %}</div>{% endif %}
+  {% endfor %}
 </section>

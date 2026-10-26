@@ -1,19 +1,21 @@
-// Media queries
-$desktop-width: 1024px;
-$tablet-width: 768px;
-$mobile-width: 520px;
-
-@mixin desktop {
-  @media screen and (max-width: #{$desktop-width}) {
-    @content;
-  }
+// Self-hosted Geist variable fonts, copied from the geist npm package (v1.8.2).
+@font-face {
+  font-family: 'Geist';
+  src: url('../fonts/geist/Geist-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
 }
 
-@mixin tablet {
-  @media screen and (max-width: #{$tablet-width}) {
-    @content;
-  }
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('../fonts/geist/GeistMono-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
 }
+
+$mobile-width: 560px;
 
 @mixin mobile {
   @media screen and (max-width: #{$mobile-width}) {
@@ -21,75 +23,32 @@ $mobile-width: 520px;
   }
 }
 
-@mixin dark-tokens {
-  --paper: #18161a;
-  --canvas: #0f0e10;
-  --tile: #211e23;
-  --ink: #f2f0f3;
-  --muted: #a7a3ab;
-  --faint: #7c7880;
-  --rule: #2c292f;
-  --accent: #e0909e;
-  --accent-hot: #eaa9b4;
-  --accent-wash: #e0909e1a;
-  --accent-line: #e0909e3d;
-  --on-accent: #1a0d11;
-  --status-pass: #6fbf7e;
-  --shadow-media: 0 0 0 1px var(--rule);
-}
-
 :root {
-  --paper: #ffffff;
-  --canvas: #f7f7f9;
-  --tile: #f7f7f9;
-  --ink: #1c1c1e;
-  --muted: #5f5f66;
-  --faint: #8a8a92;
-  --rule: #e3e3e8;
-
-  --accent: #9a2a3c;
-  --accent-hot: #6b1e2c;
-  --accent-wash: #9a2a3c14;
-  --accent-line: #9a2a3c29;
-  --on-accent: #ffffff;
-  --status-pass: #2f6b3a;
+  --bg: #fcfcfc;
+  --text: #171717;
+  --secondary: #6f6f6f;
+  --link: #9a2a3c;
+  --border: rgba(0, 0, 0, 0.08);
+  --hover: rgba(0, 0, 0, 0.035);
 
   --sans: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --mono: 'Geist Mono', 'SF Mono', Menlo, Consolas, monospace;
 
-  --fs-display: clamp(34px, 4.6vw, 52px);
-  --fs-title: 16px;
-  --fs-body: 15px;
-  --fs-small: 13px;
-  --fs-caption: 12px;
+  // The only two text sizes on the page.
+  --text-base: 15px;
+  --text-small: 13px;
 
-  --radius-sm: 6px;
-  --radius-md: 8px;
-  --radius-pill: 999px;
-
-  --shadow-media: 0 18px 40px -24px rgba(20, 8, 12, 0.35), 0 0 0 1px var(--rule);
-
-  --content-max: 1120px;
-  --gutter: 40px;
-
-  color-scheme: light;
-
-  @include tablet {
-    --gutter: 24px;
-  }
-  @include mobile {
-    --gutter: 16px;
-  }
+  --radius: 8px;
+  --ease: cubic-bezier(0.2, 0, 0, 1);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) {
-    @include dark-tokens;
-    color-scheme: dark;
+  :root {
+    --bg: #111111;
+    --text: #ededed;
+    --secondary: #9b9b9b;
+    --link: #e8a0ac;
+    --border: rgba(255, 255, 255, 0.1);
+    --hover: rgba(255, 255, 255, 0.05);
   }
-}
-
-:root[data-theme='dark'] {
-  @include dark-tokens;
-  color-scheme: dark;
 }

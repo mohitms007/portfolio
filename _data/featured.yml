@@ -1,57 +1,25 @@
 - name: Covenant Desk
-  kind: AI agent
-  url: https://covenant-desk.onrender.com
-  code: https://github.com/mohitmsh/covenant-desk
   image: covenant-desk.jpg
   alt: Covenant Desk run review, where the compliance certificate disagrees with the tested covenant results
-  summary: An AI agent that reads a borrower's monthly reporting pack, extracts each figure with a quote from the page, and flags where the compliance certificate disagrees with the tested covenants. Code, not the model, does every calculation and rejects any figure it can't find on the page.
-  facts:
-    - label: Evals
-      value: 8 of 8 cases, 119 of 119 checks
-    - label: Model cost
-      value: $0.047 per eval run
-    - label: Safety
-      value: Prompt-injection test case
-  stack:
-    - Claude API
-    - TypeScript
-    - React
-    - Hono
-    - Postgres
+  summary: An AI agent that reads a borrower's reporting pack, tests the loan covenants in code, and flags where the compliance certificate disagrees.
+  links:
+    - label: Live demo
+      url: https://covenant-desk.onrender.com
+    - label: Code
+      url: https://github.com/mohitmsh/covenant-desk
 
 - name: Aussie EcoLens
-  kind: Cloud · ML
-  url: https://frontend-mohitms007s-projects.vercel.app
   image: ecolens.jpg
   alt: Aussie EcoLens home page
-  summary: A multi-cloud serverless wildlife platform that auto-tags uploaded images and videos with Australian species using an ML detection pipeline. I owned the AWS infrastructure, React frontend and auth flow.
-  stack:
-    - AWS Lambda
-    - Cognito
-    - DynamoDB
-    - GCP
-    - React
+  summary: A multi-cloud serverless platform that tags wildlife photos and videos with Australian species using an ML pipeline.
+  links:
+    - label: Live demo
+      url: https://frontend-mohitms007s-projects.vercel.app
 
 - name: WattWise
-  kind: Android
-  url: https://github.com/mohitmsh/WattWise
   image: wattwise.jpg
   alt: WattWise home, live power and energy map screens
-  summary: An Android app that helps a household understand and reduce its electricity use, with live meter readings, usage history, tariff-aware insights and a weather energy map. Team project at Monash.
-  stack:
-    - Kotlin
-    - Jetpack Compose
-    - Room
-    - Firebase
-
-- name: ReLeaf Melbourne
-  kind: Web
-  url: https://msharma-library-fit5032.web.app
-  image: releaf.jpg
-  alt: ReLeaf Melbourne home page
-  summary: A web app for community tree-planting days in Melbourne's west. Volunteers book days, coordinators run events and email volunteers, and admins manage roles and reviews.
-  stack:
-    - Vue 3
-    - Firestore
-    - Cloud Functions
-    - Cloudflare Workers
+  summary: An Android app that helps a household understand and reduce its electricity use.
+  links:
+    - label: Code
+      url: https://github.com/mohitmsh/WattWise

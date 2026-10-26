@@ -1,11 +1,4 @@
 <footer class="footer">
-  <div class="footer__left">
-    <span class="brand__mark brand__mark--small">M</span>
-    <span>Mohit Sharma · {{ site.time | date: '%Y' }}</span>
-  </div>
-  <nav class="footer__links">
-    {% for link in site.social %}
-    <a href="{{link.url}}" target="_blank">{{link.title | capitalize}}</a>
-    {% endfor %}
-  </nav>
+  <span>© 2026 Mohit Sharma</span>
+  {% include social.html %}
 </footer>

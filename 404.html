@@ -3,12 +3,9 @@ layout: not_found
 title: 404
 permalink: /404.html
 ---
-<div class="shell">
-  {% include topbar.html %}
-  <main class="panel not-found">
-    <p class="eyebrow"><span class="dot"></span>404</p>
-    <h1 class="hero__title">Nothing here.</h1>
-    <p class="muted">The page you asked for doesn't exist.</p>
-    <a class="button button--primary" href="{{site.baseurl}}/">Back home</a>
+<div class="page">
+  {% include header.html %}
+  <main class="intro">
+    <p>This page doesn't exist. <a href="{{site.baseurl}}/">Go home</a>.</p>
   </main>
 </div>
