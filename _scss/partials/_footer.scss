@@ -13,7 +13,9 @@
     padding: 50px 30px;
   }
   &__copyright {
-    font-weight: 700;
+    font-family: $serif;
+    font-size: 1.15rem;
+    font-weight: 400;
     width: 200px;
     @include weird-medium {
       width: auto;
@@ -43,9 +45,10 @@
     a {
       position: relative;
       display: inline-block;
-      color: $blue !important;
+      color: $accent !important;
       text-transform: uppercase;
-      font-weight: 700;
+      font-family: $mono;
+      font-weight: 500;
       margin: 0 15px;
       outline: none;
       @include desktop {
@@ -57,7 +60,7 @@
         left: 0;
         width: 100%;
         height: 1px;
-        background: $blue;
+        background: $accent;
         content: '';
         opacity: 0;
         transition: height 0.3s, opacity 0.3s, transform 0.3s;

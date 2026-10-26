@@ -19,6 +19,14 @@
         </ul>
       </div>
       <div class="skillz__category">
+        <div class="skillz__category__label">AI &amp; LLMs</div>
+        <ul>
+          {% for skill in site.data.skills.ai %}
+          <li class="skillz__category__item">{{skill.item}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="skillz__category">
         <div class="skillz__category__label">Beginner</div>
         <ul>
           {% for skill in site.data.skills.beginner %}

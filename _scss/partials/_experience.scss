@@ -12,20 +12,25 @@
       }
     }
     &__company {
-      font-weight: 700;
-      font-size: 1.1rem;
+      font-family: $serif;
+      font-weight: 400;
+      font-size: 1.4rem;
+      letter-spacing: -0.01em;
+      a {
+        font-weight: 400;
+      }
     }
     &__time {
       font-size: 0.9rem;
-      font-family: 'Inconsolata', monospace;
+      font-family: $mono;
       color: $grey;
       @include mobile {
         font-size: 0.8rem;
       }
     }
     &__position {
-      font-weight: 600;
-      color: $blue;
+      font-weight: 500;
+      color: $accent;
       margin-top: 5px;
       margin-bottom: 12px;
     }
@@ -43,7 +48,7 @@
           content: '▹';
           position: absolute;
           left: 0;
-          color: $blue;
+          color: $accent;
           font-size: 1.2rem;
           line-height: 1.4;
         }

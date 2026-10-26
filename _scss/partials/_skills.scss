@@ -13,8 +13,9 @@
     }
     &__category {
       &__label {
-        font-weight: 700;
-        color: $blue;
+        font-family: $mono;
+        font-weight: 500;
+        color: $accent;
         text-transform: uppercase;
         letter-spacing: 1px;
         margin-bottom: 15px;
@@ -36,7 +37,7 @@
           content: '▹';
           position: absolute;
           left: 0;
-          color: $blue;
+          color: $accent;
           font-size: 1.1rem;
           line-height: 1.4;
         }

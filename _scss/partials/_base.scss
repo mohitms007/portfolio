@@ -9,7 +9,7 @@ html {
 }
 
 ::selection {
-  background: $yellow;
+  background: $accent-line;
 }
 
 html,
@@ -18,20 +18,20 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+  background: $white;
   color: $dark-grey;
-  font-family: $Apercu;
+  font-family: $sans;
   line-height: 1.6;
   width: 100%;
-  font-size: 18px;
+  font-size: 17px;
   scroll-behavior: smooth;
 
   &.night {
-    background: linear-gradient(135deg, $night 0%, #16213e 100%);
+    background: $night;
     color: $slate;
     ::selection {
       color: $night;
-      background: $accent;
+      background: $accent-night;
     }
     .switch-wrapper {
       .sun {
@@ -53,7 +53,39 @@ body {
       color: $off-white;
     }
     .section__content .underline-link:after {
-      background: $accent;
+      background: $accent-night;
+    }
+    .section__title,
+    .skills .skillz__category__label,
+    .skills .skillz__category__item:before,
+    .experience .job__position,
+    .experience .job__details li:before,
+    .footer__links a,
+    .other-projects .project__used__item,
+    .intro__tagline .name {
+      color: $accent-night !important;
+    }
+    .other-projects .project__used__item {
+      border-color: rgba(224, 144, 158, 0.4);
+    }
+    .footer__links a:after {
+      background: $accent-night;
+    }
+    .arrow-link:after {
+      background: $accent-night;
+    }
+    .intro__contact .highlight-link {
+      box-shadow: inset 0 -2px 0 $accent-night;
+      &:hover {
+        box-shadow: inset 0 -33px 0 0 $accent-night;
+        color: $night;
+      }
+    }
+    .featured-projects .project__pic img {
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+    .switch-wrapper .toggle-wrapper #switch:checked + label {
+      background: $accent-night;
     }
   }
 }
@@ -61,7 +93,7 @@ body {
 a {
   @include transition;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
   color: inherit;
 }
 
@@ -83,7 +115,7 @@ img {
 }
 
 strong {
-  font-weight: 700;
+  font-weight: 500;
   color: $black;
 }
 
@@ -116,12 +148,14 @@ strong {
     flex-shrink: 0;
     width: 200px;
     margin-right: 70px;
-    color: $blue;
+    color: $accent;
     text-transform: uppercase;
     text-align: right;
-    font-weight: 700;
-    letter-spacing: 2.5px;
-    font-size: 0.9rem;
+    font-family: $mono;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    font-size: 0.78rem;
+    padding-top: 4px;
     @include desktop {
       margin-right: 50px;
     }
@@ -181,7 +215,7 @@ strong {
 
 .arrow-link {
   @include transition;
-  font-weight: 700;
+  font-weight: 500;
   display: inline-block;
   background-color: transparent;
   white-space: nowrap;
@@ -191,8 +225,9 @@ strong {
     bottom: 2px;
     margin-left: 15px;
     content: '';
-    background: url('../img/arrow.png') no-repeat center;
-    background-size: 100%;
+    background: $accent;
+    -webkit-mask: url('../img/arrow.png') no-repeat center / 100%;
+    mask: url('../img/arrow.png') no-repeat center / 100%;
     width: 15px;
     height: 15px;
     display: inline-block;
@@ -204,7 +239,7 @@ strong {
 }
 
 .small {
-  font-family: 'Inconsolata', monospace;
+  font-family: $mono;
   font-size: 0.85rem;
   display: inline-block;
   margin-top: 15px;

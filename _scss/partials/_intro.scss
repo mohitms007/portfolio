@@ -18,8 +18,10 @@
   }
 
   &__hello, &__tagline {
-    font-size: 3rem;
-    font-weight: 300;
+    font-family: $serif;
+    font-size: clamp(2.375rem, 4.2vw, 3.6rem);
+    font-weight: 400;
+    letter-spacing: -0.02em;
     margin-bottom: 30px;
     @include desktop {
       font-size: 2.5rem;
@@ -54,7 +56,8 @@
     }
   }
   &__hello {
-    font-weight: 300;
+    font-weight: 400;
+    line-height: 1.04;
     .wave-hand {
       background-image: url('../img/emojis/wave.png');
       margin-left: 10px;
@@ -94,15 +97,11 @@
     }
   }
   &__tagline {
-    font-weight: 300;
-    max-width: 800px;
-    line-height: 1.5;
+    font-weight: 400;
+    max-width: 860px;
+    line-height: 1.18;
     .name {
-      font-weight: 700;
-      background: linear-gradient(135deg, $gradient-start, $gradient-end);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      color: $accent;
     }
     .man-technologist {
       background-image: url('../img/emojis/man-technologist.png');
@@ -134,9 +133,9 @@
       display: inline-block;
       padding: 2px 3px;
       text-decoration: none;
-      box-shadow: inset 0 -3px 0 $blue;
+      box-shadow: inset 0 -2px 0 $accent;
       &:hover {
-        box-shadow: inset 0 -33px 0 0 $blue;
+        box-shadow: inset 0 -33px 0 0 $accent;
         color: $white;
       }
     }

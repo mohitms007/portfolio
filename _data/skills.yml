@@ -21,6 +21,18 @@ intermediate:
   - item: MongoDB
   - item: Ruby on Rails
 
+ai:
+  - item: LLM Agents & Tool Use
+  - item: Claude API (Anthropic SDK)
+  - item: OpenAI API
+  - item: Structured Extraction
+  - item: LLM Evals
+  - item: Prompt Engineering
+  - item: Prompt-Injection Defence
+  - item: ML Pipelines (MegaDetector, SpeciesNet)
+  - item: Distributed LLM Training
+  - item: Claude Code
+
 beginner:
   - item: Apache Kafka
   - item: GCP

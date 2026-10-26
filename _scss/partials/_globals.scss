@@ -1,24 +1,25 @@
 // Colors
-$night: #0a0e27;
-$black: #1a1a2e;
-$dark-grey: #2d3748;
-$grey: #718096;
-$blue: #3b82f6;
-$slate: #cbd5e0;
-$off-white: #f7fafc;
+$night: #120a0d;
+$night-raised: #1c1115;
+$black: #000000;
+$dark-grey: rgba(0, 0, 0, 0.78);
+$grey: rgba(0, 0, 0, 0.58);
+$rule: rgba(0, 0, 0, 0.09);
+$slate: #e6dcdf;
+$off-white: #faf7f8;
 $white: #ffffff;
-$green: #10b981;
-$purple: #8b5cf6;
-$red: #ef4444;
-$orange: #f59e0b;
-$yellow: #fbbf24;
-$accent: #60a5fa;
-$gradient-start: #667eea;
-$gradient-end: #764ba2;
+$paper2: #fafafa;
+$accent: #9a2a3c;
+$accent-hot: #6b1e2c;
+$accent-wash: rgba(154, 42, 60, 0.08);
+$accent-line: rgba(154, 42, 60, 0.16);
+$accent-night: #e0909e;
+$plum: #5a2847;
 // Fonts
-$font-stack: 'Source Sans Pro', system, system-ui, -apple-system,
-  BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
-$Apercu: 'Apercu', $font-stack;
+$serif: 'Newsreader', 'Times New Roman', Georgia, serif;
+$sans: 'Geist', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  Roboto, Helvetica, Arial, sans-serif;
+$mono: 'Geist Mono', 'SF Mono', Menlo, Consolas, monospace;
 // Media queries
 $fifteen-inch: 1440px;
 $thirteen-inch: 1280px;
