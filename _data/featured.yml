@@ -1,5 +1,6 @@
 - name: Covenant Desk
   image: covenant-desk.jpg
+  image_mobile: covenant-desk-mobile.jpg
   alt: Covenant Desk run review, where the compliance certificate disagrees with the tested covenant results
   summary: An AI agent that reads a borrower's reporting pack, tests the loan covenants in code, and flags where the compliance certificate disagrees.
   links:

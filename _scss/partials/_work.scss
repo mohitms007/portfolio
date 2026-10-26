@@ -6,6 +6,9 @@
     border: 1px solid var(--border);
     border-radius: var(--radius);
     background: var(--hover);
+    picture {
+      display: block;
+    }
     img {
       width: 100%;
       aspect-ratio: 16 / 10;
