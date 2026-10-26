@@ -4,7 +4,7 @@
   {% if forloop.index == 2 %}<div class="work-grid">{% endif %}
   <article class="work{% if forloop.first %} work--lead{% endif %}">
     <a class="work__media" href="{{project.links[0].url}}" target="_blank" rel="noopener">
-      <img src="{{site.baseurl}}/img/featured/projects/{{project.image}}" alt="{{project.alt}}" width="1440" height="900" loading="{% if forloop.first %}eager{% else %}lazy{% endif %}">
+      <img src="{{site.baseurl}}/img/featured/projects/{{project.image}}?v={{ site.time | date: '%s' }}" alt="{{project.alt}}" width="1440" height="900" loading="{% if forloop.first %}eager{% else %}lazy{% endif %}">
     </a>
     <h3 class="work__title">{{project.name}}</h3>
     <p class="muted">{{project.summary}}</p>
