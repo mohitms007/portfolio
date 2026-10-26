@@ -31,7 +31,7 @@
   line: Taught a Python OCR backend to read forms, so people didn't have to. Manual work halved.
 
 - company: Hey Coach
-  initial: H
+  logo: heycoach.png
   position: Founding Engineer
   time: Jun 2021 – Aug 2021
   line: First engineer. Built the platform 100+ students learned on, in React and Rails.
