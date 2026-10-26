@@ -1,0 +1,13 @@
+<section class="section" id="writing">
+  <h2 class="section__title">Writing</h2>
+  <ul class="projects">
+    {% for post in site.posts %}
+    <li class="projects__item">
+      <div class="projects__row">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <span class="job__time">{{ post.date | date: '%b %Y' }}</span>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

@@ -13,7 +13,7 @@
 <meta property="og:image:height" content="800" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:locale" content="en_US">
-<meta name="description" content="{{site.description}}">
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{site.description}}{% endif %}">
 <meta name="keywords" content="design, development, web, ai, llm, agents, sharma, mohit, mohitms007, javascript, panjab">
 <meta name="google-site-verification" content="DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk" />
 <meta itemprop="name" content="{{site.title}}">
