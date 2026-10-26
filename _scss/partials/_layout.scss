@@ -47,31 +47,6 @@
 .intro {
   display: grid;
   gap: 16px;
-  &--with-photo {
-    grid-template-columns: 112px minmax(0, 1fr);
-    gap: 28px;
-    align-items: start;
-    @include mobile {
-      grid-template-columns: minmax(0, 1fr);
-      gap: 20px;
-    }
-  }
-  &__photo {
-    width: 112px;
-    height: 112px;
-    margin-top: 4px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 0 0 1px var(--border);
-    @include mobile {
-      width: 80px;
-      height: 80px;
-    }
-  }
-  &__text {
-    display: grid;
-    gap: 16px;
-  }
 }
 
 .section {
