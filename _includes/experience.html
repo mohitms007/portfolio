@@ -2,19 +2,15 @@
   <h2 class="section__title">Experience</h2>
   <ul class="jobs">
     {% for job in site.data.experience %}
-    <li>
-      <details class="job">
-        <summary class="job__row">
-          {% if job.logo %}<img class="job__logo" src="{{site.baseurl}}/img/logos/{{job.logo}}" alt="" width="20" height="20">{% else %}<span class="job__logo job__logo--initial" aria-hidden="true">{{job.initial}}</span>{% endif %}
-          <span class="job__company">{{job.company}}</span>
-          <span class="job__role muted">{{job.position}}</span>
-          <span class="job__time">{{job.time}}</span>
-        </summary>
-        <ul class="job__details">
-          {% for detail in job.details limit:2 %}<li>{{detail}}</li>{% endfor %}
-        </ul>
-      </details>
+    <li class="job">
+      <div class="job__row">
+        {% if job.logo %}<img class="job__logo" src="{{site.baseurl}}/img/logos/{{job.logo}}" alt="" width="20" height="20">{% else %}<span class="job__logo job__logo--initial" aria-hidden="true">{{job.initial}}</span>{% endif %}
+        <span class="job__company">{{job.company}}{% if job.badge %} <span class="muted">· {{job.badge}}</span>{% endif %}</span>
+        <span class="job__time">{{job.time}}</span>
+      </div>
+      <p class="job__line"><span class="job__role">{{job.position}}.</span> <span class="muted">{{job.line}}</span></p>
     </li>
     {% endfor %}
   </ul>
+  <p class="section__more"><a href="{{site.resume}}" target="_blank" rel="noopener">Full resume{% include icons/arrow-up-right.svg %}</a></p>
 </section>

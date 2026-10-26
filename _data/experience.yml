@@ -2,37 +2,36 @@
   logo: monash.png
   position: Teaching Associate
   time: Feb 2026 – Present
-  details:
-    - Teaching FIT1050 Web Fundamentals and FIT3178 iOS Development.
+  line: Teaching web fundamentals and iOS development to undergrads.
 
 - company: Monash University
   logo: monash.png
   position: Research Software Engineer Intern
   time: Nov 2025 – Feb 2026
-  details:
-    - Built a real-time energy analytics platform that ingests building consumption data through Apache Kafka and shows it as 3D visualisations.
-    - Built MapLink, a map-based freelance marketplace with a multi-stage job state machine, Python REST APIs and JWT authentication.
+  line: Streamed building energy data through Kafka into live 3D views. Built a freelance marketplace too.
 
-- company: Nudge (Antler Launchpad)
+- company: Nudge
+  badge: Antler Launchpad
   initial: N
   position: Software Engineer
   time: Dec 2025 – Feb 2026
-  details:
-    - Shipped the iOS MVP of an AI budgeting app to 200 beta testers in under a month. The product was accepted into Antler Launchpad.
-    - Used the OpenAI API to analyse spending and generate budget recommendations, served from FastAPI on AWS.
+  line: Zero to 200 beta testers in under a month, and into Antler Launchpad.
 
 - company: Josh Technology Group
   logo: jtg.png
   position: Software Engineer
   time: Jan 2023 – Jul 2025
-  details:
-    - Delivered features across 3 enterprise products serving 50K+ US users.
-    - Rebuilt a legacy resume service as a serverless microservice, making PDF generation 40% faster across 10K+ documents a month.
+  line: Two and a half years of enterprise software for 50K+ US users. Shipped features, fixed the P0s, interviewed the next hires.
 
-- company: Salt (YC W22)
+- company: Salt
+  badge: YC W22
   logo: salt.png
   position: Software Engineer Intern
   time: Jul 2022 – Oct 2022
-  details:
-    - Built a document-automation product, from the React frontend to a Python OCR backend, cutting manual processing by 50%.
-    - Built a drag-and-drop form builder and a document-generation interface.
+  line: Taught a Python OCR backend to read forms, so people didn't have to. Manual work halved.
+
+- company: Hey Coach
+  initial: H
+  position: Founding Engineer
+  time: Jun 2021 – Aug 2021
+  line: First engineer. Built the platform 100+ students learned on, in React and Rails.

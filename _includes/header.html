@@ -1,4 +1,10 @@
 <header class="header">
   <a class="header__name" href="{{site.baseurl}}/">Mohit Sharma</a>
-  {% include social.html %}
+  <div class="header__links">
+    {% include social.html %}
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch between light and dark mode">
+      <span class="theme-toggle__sun">{% include icons/sun.svg %}</span>
+      <span class="theme-toggle__moon">{% include icons/moon.svg %}</span>
+    </button>
+  </div>
 </header>

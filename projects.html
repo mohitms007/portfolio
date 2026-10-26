@@ -1,0 +1,30 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+
+<div class="page">
+  {% include header.html %}
+  <main>
+    <section class="intro">
+      <p><a href="{{site.baseurl}}/">← Back</a></p>
+    </section>
+    <section class="section section--first">
+      <h2 class="section__title">Projects</h2>
+      <ul class="projects">
+        {% for project in site.data.projects %}
+        <li class="projects__item">
+          <div class="projects__row">
+            {% if project.url %}<a href="{{project.url}}" target="_blank" rel="noopener">{{project.name}}{% include icons/arrow-up-right.svg %}</a>{% else %}<span class="projects__name">{{project.name}}</span>{% endif %}
+            {% if project.year %}<span class="job__time">{{project.year}}</span>{% endif %}
+          </div>
+          <p class="muted">{{project.description}}</p>
+        </li>
+        {% endfor %}
+      </ul>
+      <p class="section__more"><a href="https://github.com/mohitms007?tab=repositories" target="_blank" rel="noopener">Everything else on GitHub{% include icons/arrow-up-right.svg %}</a></p>
+    </section>
+  </main>
+  {% include footer.html %}
+</div>

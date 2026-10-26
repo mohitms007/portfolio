@@ -1,0 +1,53 @@
+- name: Covenant Desk
+  year: 2026
+  url: https://covenant-desk.onrender.com
+  description: An AI agent that checks loan covenants. Code does the maths, the model only reads.
+
+- name: Aussie EcoLens
+  year: 2026
+  url: https://frontend-mohitms007s-projects.vercel.app
+  description: Upload a photo, get the Australian species in it. Serverless across AWS and GCP.
+
+- name: WattWise
+  year: 2026
+  url: https://github.com/mohitmsh/WattWise
+  description: An Android app that shows a household where its electricity goes.
+
+- name: ReLeaf Melbourne
+  year: 2026
+  url: https://msharma-library-fit5032.web.app
+  description: Bookings and volunteer management for community tree-planting days.
+
+- name: Nudge
+  year: 2025
+  url: https://github.com/mohitmsh/nudge-insights
+  description: An iOS budgeting app that blocks the apps you overspend in. Antler Launchpad.
+
+- name: Distributed LLM Training
+  year: 2026
+  url: https://github.com/mohitmsh/MohitSharma_MinorThesis_DecentralizedLLMTraining
+  description: Minor thesis notes on training large models across mismatched GPUs.
+
+- name: MapLink
+  year: 2025
+  description: A map-first freelance marketplace with a multi-stage job state machine.
+
+- name: Image Gallery
+  url: https://image-gallery-ecru-theta.vercel.app
+  description: A photo gallery on Next.js, shadcn, Drizzle and Postgres.
+
+- name: GeoPins
+  url: https://optimistic-wescoff-9a4ec5.netlify.app/
+  description: Drop pins on a map and watch others' appear live over GraphQL subscriptions.
+
+- name: Cloth Fits
+  url: https://cloth-fits.vercel.app/
+  description: A clothing store with real Stripe checkout, search, selling and auth.
+
+- name: Expanse
+  url: http://expanse-next-app.vercel.app/
+  description: Daily space news and NASA data, server-rendered with Next.js.
+
+- name: TreadStone
+  url: https://github.com/mohitms007/Treadstone-Web
+  description: Book, review and track hiking tours. A full-stack Node app.

@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ site.title }}</title>
+<title>{% if page.title and page.title != "404" %}{{ page.title }} | {{ site.name }}{% else %}{{ site.title }}{% endif %}</title>
 <link rel="icon" type="image/png" href="{{site.logo}}" hreflang="en-us">
 <meta property="og:title" content="{{site.title}}" />
 <meta property="og:description" content="{{site.description}}" />
@@ -25,5 +25,6 @@
 <meta name="twitter:description" content="{{site.description}}">
 <meta name="twitter:image:src" content="{{site.cover}}">
 <meta name="color-scheme" content="light dark">
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 <link rel="preload" href="{{ site.baseurl }}/fonts/geist/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" hreflang="en-us">

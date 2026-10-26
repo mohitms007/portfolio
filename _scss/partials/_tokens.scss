@@ -42,13 +42,27 @@ $mobile-width: 560px;
   --ease: cubic-bezier(0.2, 0, 0, 1);
 }
 
+@mixin dark {
+  --bg: #111111;
+  --text: #ededed;
+  --secondary: #9b9b9b;
+  --link: #e8a0ac;
+  --border: rgba(255, 255, 255, 0.1);
+  --hover: rgba(255, 255, 255, 0.05);
+  color-scheme: dark;
+}
+
+// Follow the system unless the visitor picked a theme with the toggle.
 @media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #111111;
-    --text: #ededed;
-    --secondary: #9b9b9b;
-    --link: #e8a0ac;
-    --border: rgba(255, 255, 255, 0.1);
-    --hover: rgba(255, 255, 255, 0.05);
+  :root:not([data-theme='light']) {
+    @include dark;
   }
+}
+
+:root[data-theme='dark'] {
+  @include dark;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
 }
