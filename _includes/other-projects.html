@@ -1,20 +1,23 @@
-<section class="section other-projects">
-  <div class="section__title">Other Projects</div>
-  <div class="section__content">
+<section class="section" id="projects">
+  <header class="section__head">
+    <h2 class="section__title">Other projects</h2>
+    <span class="section__meta">{{ site.data.other-projects | size }} projects</span>
+  </header>
+
+  <div class="card table">
+    <div class="table__row table__row--head">
+      <div>Project</div>
+      <div>What it is</div>
+      <div>Stack</div>
+    </div>
     {% for project in site.data.other-projects %}
-    <div class="project">
-      <div class="project__name">
-        {% if project.url %}
-        <a href="{{project.url}}" target="_blank" class="arrow-link">{{project.name}}</a>
-        {% else %}
-        {{project.name}}
-        {% endif %}
+    <div class="table__row">
+      <div class="table__name">
+        {% if project.url %}<a href="{{project.url}}" target="_blank">{{project.name}} <span class="arrow">↗</span></a>{% else %}{{project.name}}{% endif %}
       </div>
-      <p>{{project.description}}</p>
-      <div class="project__used">
-        {% for item in project.used %}
-        <span class="project__used__item">{{item.thing}}</span>
-        {% endfor %}
+      <div class="muted">{{project.description}}</div>
+      <div class="tags">
+        {% for item in project.used %}<span class="tag">{{item.thing}}</span>{% endfor %}
       </div>
     </div>
     {% endfor %}

@@ -1,27 +1,28 @@
-<section class="section experience">
-  <div class="section__title">Experience</div>
-  <div class="section__content">
-    <div class="jobs">
-      {% for job in site.data.experience %}
-      <div class="job">
-        <div class="time-place">
-          <div class="job__company">
-            <a href="{{job.url}}" target="_blank">{{job.company}}</a>
-          </div>
-          <div class="job__time">{{job.time}}</div>
-        </div>
-        <div class="job__position">{{job.position}}</div>
-        {% if job.details %}
-        <ul class="job__details">
-          {% for detail in job.details %}
-          <li>{{detail}}</li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-      </div>
-      {% endfor %}
-    </div>
+<section class="section" id="experience">
+  <header class="section__head">
+    <h2 class="section__title">Experience</h2>
+    <a class="section__link" href="{{site.resume}}" target="_blank">Full resume →</a>
+  </header>
 
-    <a href="{{site.resume}}" target="_blank" class="arrow-link">View My Resume</a>
+  <div class="card list">
+    {% for job in site.data.experience %}
+    <details class="job"{% if forloop.index <= 3 %} open{% endif %}>
+      <summary class="job__row">
+        <div class="job__main">
+          <div class="job__company">{{job.company}}</div>
+          <div class="muted">{{job.position}}</div>
+        </div>
+        <div class="job__time">{{job.time}}</div>
+        <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </summary>
+      {% if job.details %}
+      <ul class="job__details">
+        {% for detail in job.details %}
+        <li>{{detail}}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </details>
+    {% endfor %}
   </div>
 </section>

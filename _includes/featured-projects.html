@@ -1,62 +1,53 @@
-<section class="section featured-projects">
-  <div class="section__title">Featured Projects</div>
-  <div class="section__content">
-    <div class="project screentime">
-      <figure class="project__pic">
-        <a href="https://covenant-desk.onrender.com" target="_blank">
-          <img src="{{site.baseurl}}/img/featured/projects/covenant-desk.jpg" alt="Covenant Desk run review: the compliance certificate disagrees with the tested covenant results">
-        </a>
-      </figure>
-      <figcaption class="project__caption">
-        <div class="project__name">
-          <a href="https://covenant-desk.onrender.com" target="_blank">Covenant Desk</a>
-        </div>
-        <p>An AI agent that reads a borrower's monthly reporting pack, extracts the figures with a quote from the page, and flags where the compliance certificate disagrees with the tested covenants. Code (not the model) does every calculation and rejects any figure it can't find on the page. Includes an eval suite (8 cases, 119 checks) with a prompt-injection test (Claude API, TypeScript, React, Hono, Postgres).</p>
-        <p><a href="https://github.com/mohitmsh/covenant-desk" target="_blank" class="small">View the code</a></p>
-      </figcaption>
-    </div>
+<section class="section" id="work">
+  <header class="section__head">
+    <h2 class="section__title">Selected work</h2>
+    <span class="section__meta">{{ site.data.featured | size }} projects</span>
+  </header>
 
-    <div class="project blistabloc">
-      <figure class="project__pic">
-        <a href="https://frontend-mohitms007s-projects.vercel.app" target="_blank">
-          <img src="{{site.baseurl}}/img/featured/projects/ecolens.jpg" alt="Aussie EcoLens home page">
-        </a>
-      </figure>
-      <figcaption class="project__caption">
-        <div class="project__name">
-          <a href="https://frontend-mohitms007s-projects.vercel.app" target="_blank">Aussie EcoLens</a>
-        </div>
-        <p>A multi-cloud serverless wildlife platform on AWS and GCP that auto-tags uploaded images and videos with Australian species using an ML detection pipeline (MegaDetector, SpeciesNet). I owned the AWS infrastructure, React frontend and auth flow (Cognito, API Gateway, Lambda, S3, DynamoDB).</p>
-      </figcaption>
+  {% assign lead = site.data.featured | first %}
+  <article class="card feature">
+    <a class="feature__media" href="{{lead.url}}" target="_blank">
+      <img src="{{site.baseurl}}/img/featured/projects/{{lead.image}}" alt="{{lead.alt}}" loading="lazy">
+    </a>
+    <div class="feature__body">
+      <div class="chip-row">
+        <span class="chip"><span class="dot dot--pass"></span>Live demo</span>
+        <span class="chip">{{lead.kind}}</span>
+      </div>
+      <h3 class="feature__title">{{lead.name}}</h3>
+      <p class="muted">{{lead.summary}}</p>
+      <dl class="meta-list meta-list--compact">
+        {% for fact in lead.facts %}
+        <div><dt>{{fact.label}}</dt><dd>{{fact.value}}</dd></div>
+        {% endfor %}
+      </dl>
+      <div class="tags">
+        {% for item in lead.stack %}<span class="tag">{{item}}</span>{% endfor %}
+      </div>
+      <div class="card__actions">
+        <a class="button button--primary" href="{{lead.url}}" target="_blank">Open demo</a>
+        <a class="button" href="{{lead.code}}" target="_blank">View code</a>
+      </div>
     </div>
+  </article>
 
-    <div class="project screentime">
-      <figure class="project__pic">
-        <a href="https://github.com/mohitmsh/WattWise" target="_blank">
-          <img src="{{site.baseurl}}/img/featured/projects/wattwise.jpg" alt="WattWise home, live power and energy map screens">
-        </a>
-      </figure>
-      <figcaption class="project__caption">
-        <div class="project__name">
-          <a href="https://github.com/mohitmsh/WattWise" target="_blank">WattWise</a>
+  <div class="grid grid--3">
+    {% for project in site.data.featured offset:1 %}
+    <article class="card project">
+      <a class="project__media" href="{{project.url}}" target="_blank">
+        <img src="{{site.baseurl}}/img/featured/projects/{{project.image}}" alt="{{project.alt}}" loading="lazy">
+      </a>
+      <div class="project__body">
+        <div class="project__head">
+          <h3 class="project__title"><a href="{{project.url}}" target="_blank">{{project.name}}</a></h3>
+          <span class="chip">{{project.kind}}</span>
         </div>
-        <p>An Android app that helps a household understand and reduce its electricity use, with live meter readings, usage history, tariff-aware insights and a weather energy map. Built as a team project at Monash (Kotlin, Jetpack Compose, Room, Firebase).</p>
-      </figcaption>
-    </div>
-
-    <div class="project blistabloc">
-      <figure class="project__pic">
-        <a href="https://msharma-library-fit5032.web.app" target="_blank">
-          <img src="{{site.baseurl}}/img/featured/projects/releaf.jpg" alt="ReLeaf Melbourne home page">
-        </a>
-      </figure>
-      <figcaption class="project__caption">
-        <div class="project__name">
-          <a href="https://msharma-library-fit5032.web.app" target="_blank">ReLeaf Melbourne</a>
+        <p class="muted">{{project.summary}}</p>
+        <div class="tags">
+          {% for item in project.stack %}<span class="tag">{{item}}</span>{% endfor %}
         </div>
-        <p>A web app for community tree-planting days in Melbourne's west. Volunteers book planting days, coordinators run events and email their volunteers, and admins manage roles and reviews (Vue 3, Firebase Auth, Firestore, Cloud Functions, Cloudflare Workers).</p>
-      </figcaption>
-    </div>
-
+      </div>
+    </article>
+    {% endfor %}
   </div>
 </section>

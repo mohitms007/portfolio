@@ -1,0 +1,48 @@
+.table {
+  overflow: hidden;
+  &__row {
+    display: grid;
+    grid-template-columns: 200px minmax(0, 1fr) 260px;
+    gap: 20px;
+    align-items: start;
+    padding: 16px 20px;
+    font-size: var(--fs-small);
+    + .table__row {
+      border-top: 1px solid var(--rule);
+    }
+    @include desktop {
+      grid-template-columns: 180px minmax(0, 1fr);
+      .tags {
+        grid-column: 2;
+      }
+    }
+    @include tablet {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 8px;
+      .tags {
+        grid-column: 1;
+      }
+    }
+    &--head {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background: var(--tile);
+      color: var(--muted);
+      font-size: var(--fs-caption);
+      font-weight: 500;
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+  &__name {
+    font-weight: 500;
+    a:hover {
+      color: var(--accent);
+    }
+    .arrow {
+      color: var(--faint);
+      font-size: 11px;
+    }
+  }
+}

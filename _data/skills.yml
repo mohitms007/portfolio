@@ -1,58 +1,64 @@
-proficient:
-  - item: TypeScript
-  - item: JavaScript (ES6)
-  - item: Python
-  - item: React
-  - item: Redux
-  - item: Next.js
-  - item: Node.js
-  - item: REST APIs
+- label: AI & LLMs
+  items:
+    - LLM Agents & Tool Use
+    - Claude API (Anthropic SDK)
+    - OpenAI API
+    - Structured Extraction
+    - LLM Evals
+    - Prompt Engineering
+    - Prompt-Injection Defence
+    - ML Pipelines (MegaDetector, SpeciesNet)
+    - Distributed LLM Training
+    - Claude Code
 
-intermediate:
-  - item: C#
-  - item: .NET
-  - item: Swift
-  - item: SwiftUI
-  - item: Angular
-  - item: Django
-  - item: FastAPI
-  - item: GraphQL
-  - item: SQL (PostgreSQL, SQL Server)
-  - item: MongoDB
-  - item: Ruby on Rails
+- label: Proficient
+  items:
+    - TypeScript
+    - JavaScript (ES6)
+    - Python
+    - React
+    - Redux
+    - Next.js
+    - Node.js
+    - REST APIs
 
-ai:
-  - item: LLM Agents & Tool Use
-  - item: Claude API (Anthropic SDK)
-  - item: OpenAI API
-  - item: Structured Extraction
-  - item: LLM Evals
-  - item: Prompt Engineering
-  - item: Prompt-Injection Defence
-  - item: ML Pipelines (MegaDetector, SpeciesNet)
-  - item: Distributed LLM Training
-  - item: Claude Code
+- label: Working knowledge
+  items:
+    - C#
+    - .NET
+    - Swift
+    - SwiftUI
+    - Angular
+    - Django
+    - FastAPI
+    - GraphQL
+    - SQL (PostgreSQL, SQL Server)
+    - MongoDB
+    - Ruby on Rails
 
-beginner:
-  - item: Apache Kafka
-  - item: GCP
-  - item: GitHub Actions
-  - item: Java
-  - item: Go
+- label: Cloud & tools
+  items:
+    - Git & GitHub
+    - AWS (Lambda, S3, DynamoDB, Cognito, EC2)
+    - Docker
+    - Sentry
+    - Postman
+    - VS Code
+    - Linux & Bash
 
-tools:
-  - item: Git & GitHub
-  - item: AWS (Lambda, S3, DynamoDB, Cognito, EC2)
-  - item: Docker
-  - item: Sentry
-  - item: Postman
-  - item: VS Code
-  - item: Linux & Bash
+- label: Learning
+  items:
+    - Apache Kafka
+    - GCP
+    - GitHub Actions
+    - Java
+    - Go
 
-concepts:
-  - item: System Design
-  - item: Serverless Architecture
-  - item: Microservices
-  - item: Distributed Training
-  - item: Data Structures
-  - item: Agile/Scrum
+- label: Practices
+  items:
+    - System Design
+    - Serverless Architecture
+    - Microservices
+    - Distributed Training
+    - Data Structures
+    - Agile/Scrum

@@ -1,0 +1,87 @@
+.shell {
+  max-width: calc(var(--content-max) + 2 * var(--gutter));
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 60px;
+  background: var(--canvas);
+  &__nav {
+    display: flex;
+    gap: 4px;
+    @include tablet {
+      display: none;
+    }
+    a {
+      padding: 6px 10px;
+      border-radius: var(--radius-sm);
+      color: var(--muted);
+      font-size: var(--fs-small);
+      font-weight: 500;
+      &:hover {
+        color: var(--ink);
+        background: var(--paper);
+      }
+    }
+  }
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  &__mark {
+    display: grid;
+    place-items: center;
+    width: 26px;
+    height: 26px;
+    border-radius: var(--radius-sm);
+    background: var(--accent);
+    color: var(--on-accent);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1;
+    &--small {
+      width: 20px;
+      height: 20px;
+      font-size: 12px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.panel {
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-md);
+  background: var(--paper);
+  padding: 56px 56px 40px;
+  @include desktop {
+    padding: 40px 32px 16px;
+  }
+  @include mobile {
+    padding: 28px 18px 8px;
+  }
+}
+
+.not-found {
+  display: grid;
+  justify-items: start;
+  gap: 16px;
+  margin-bottom: 40px;
+  padding-bottom: 56px;
+}

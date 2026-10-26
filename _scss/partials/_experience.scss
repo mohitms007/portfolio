@@ -1,65 +1,99 @@
-.experience {
-  .jobs {
-    margin-bottom: 100px;
-  }
-  .job {
-    margin-bottom: 50px;
-    .time-place {
-      display: flex;
-      justify-content: space-between;
-      @include mobile {
-        display: block;
-      }
+.list {
+  overflow: hidden;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 20px;
+    + .list__row {
+      border-top: 1px solid var(--rule);
     }
-    &__company {
-      font-family: $serif;
-      font-weight: 400;
-      font-size: 1.4rem;
-      letter-spacing: -0.01em;
-      a {
-        font-weight: 400;
-      }
+    @include mobile {
+      flex-direction: column;
+      gap: 6px;
     }
-    &__time {
-      font-size: 0.9rem;
-      font-family: $mono;
-      color: $grey;
-      @include mobile {
-        font-size: 0.8rem;
-      }
-    }
-    &__position {
-      font-weight: 500;
-      color: $accent;
-      margin-top: 5px;
-      margin-bottom: 12px;
-    }
-    &__details {
-      list-style: none;
-      padding-left: 0;
-      margin-top: 15px;
-      li {
-        position: relative;
-        padding-left: 25px;
-        margin-bottom: 12px;
-        line-height: 1.6;
-        font-size: 0.95rem;
-        &:before {
-          content: '▹';
-          position: absolute;
-          left: 0;
-          color: $accent;
-          font-size: 1.2rem;
-          line-height: 1.4;
-        }
-      }
+    .muted {
+      font-size: var(--fs-small);
+      margin-top: 2px;
     }
   }
-  .arrow-link {
-    font-size: 1.25rem;
-    &:after {
-      width: 20px;
-      height: 20px;
+}
+
+.job {
+  + .job {
+    border-top: 1px solid var(--rule);
+  }
+  &__row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto 16px;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    cursor: pointer;
+    list-style: none;
+    &::-webkit-details-marker {
+      display: none;
+    }
+    &:hover {
+      background: var(--tile);
+    }
+    @include mobile {
+      grid-template-columns: minmax(0, 1fr) 16px;
+      .job__time {
+        grid-column: 1;
+        grid-row: 2;
+      }
+    }
+    .muted {
+      font-size: var(--fs-small);
+    }
+  }
+  &__company {
+    font-weight: 500;
+  }
+  &__time {
+    color: var(--faint);
+    font-family: var(--mono);
+    font-size: var(--fs-caption);
+    white-space: nowrap;
+  }
+  .chevron {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: var(--faint);
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: transform 0.15s ease;
+  }
+  &[open] .chevron {
+    transform: rotate(180deg);
+  }
+  &__details {
+    display: grid;
+    gap: 8px;
+    margin: 0;
+    padding: 0 56px 20px 20px;
+    list-style: none;
+    @include mobile {
+      padding-right: 20px;
+    }
+    li {
+      position: relative;
+      padding-left: 16px;
+      color: var(--muted);
+      font-size: var(--fs-small);
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0.62em;
+        left: 0;
+        width: 5px;
+        height: 5px;
+        border-radius: var(--radius-pill);
+        background: var(--accent);
+      }
     }
   }
 }

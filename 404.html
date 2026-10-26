@@ -3,8 +3,12 @@ layout: not_found
 title: 404
 permalink: /404.html
 ---
-{% include switch.html %}
-<div class="name">Mohit Sharma</div>
-<img src="{{site.baseurl}}/img/emojis/thinking-face.png" alt="">
-<h1>Hmmm...</h1>
-<h2>Looks like there's nothing here.<br>Maybe you should go back <a href="{{site.url}}">home</a>.</h2>
+<div class="shell">
+  {% include topbar.html %}
+  <main class="panel not-found">
+    <p class="eyebrow"><span class="dot"></span>404</p>
+    <h1 class="hero__title">Nothing here.</h1>
+    <p class="muted">The page you asked for doesn't exist.</p>
+    <a class="button button--primary" href="{{site.baseurl}}/">Back home</a>
+  </main>
+</div>

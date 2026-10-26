@@ -1,55 +1,19 @@
-<section class="section skills">
-  <div class="section__title">Skills</div>
-  <div class="section__content">
-    <div class="skillz">
-      <div class="skillz__category">
-        <div class="skillz__category__label">Proficient</div>
-        <ul>
-          {% for skill in site.data.skills.proficient %}
-          <li class="skillz__category__item">{{skill.item}}</li>
-          {% endfor %}
-        </ul>
+<section class="section" id="skills">
+  <header class="section__head">
+    <h2 class="section__title">Skills</h2>
+  </header>
+
+  <div class="grid grid--3">
+    {% for group in site.data.skills %}
+    <div class="card skill-group{% if forloop.first %} skill-group--accent{% endif %}">
+      <div class="skill-group__head">
+        <span class="skill-group__label">{{group.label}}</span>
+        <span class="count">{{group.items | size}}</span>
       </div>
-      <div class="skillz__category">
-        <div class="skillz__category__label">Intermediate</div>
-        <ul>
-          {% for skill in site.data.skills.intermediate %}
-          <li class="skillz__category__item">{{skill.item}}</li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="skillz__category">
-        <div class="skillz__category__label">AI &amp; LLMs</div>
-        <ul>
-          {% for skill in site.data.skills.ai %}
-          <li class="skillz__category__item">{{skill.item}}</li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="skillz__category">
-        <div class="skillz__category__label">Beginner</div>
-        <ul>
-          {% for skill in site.data.skills.beginner %}
-          <li class="skillz__category__item">{{skill.item}}</li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="skillz__category">
-        <div class="skillz__category__label">Tools</div>
-        <ul>
-          {% for tool in site.data.skills.tools %}
-          <li class="skillz__category__item">{{tool.item}}</li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="skillz__category">
-        <div class="skillz__category__label">Concepts</div>
-        <ul>
-          {% for concept in site.data.skills.concepts %}
-          <li class="skillz__category__item">{{concept.item}}</li>
-          {% endfor %}
-        </ul>
+      <div class="tags">
+        {% for item in group.items %}<span class="tag">{{item}}</span>{% endfor %}
       </div>
     </div>
+    {% endfor %}
   </div>
 </section>

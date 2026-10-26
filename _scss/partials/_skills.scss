@@ -1,47 +1,26 @@
-.skills {
-  .skillz {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
-    @include tablet {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
+.skill-group {
+  display: grid;
+  align-content: start;
+  gap: 14px;
+  padding: 18px;
+  &__head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  &__label {
+    font-size: var(--fs-small);
+    font-weight: 500;
+  }
+  &--accent {
+    border-color: var(--accent-line);
+    background: linear-gradient(var(--accent-wash), var(--accent-wash)), var(--paper);
+    .skill-group__label {
+      color: var(--accent);
     }
-    @include mobile {
-      grid-template-columns: 1fr;
-      gap: 25px;
-    }
-    &__category {
-      &__label {
-        font-family: $mono;
-        font-weight: 500;
-        color: $accent;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        margin-bottom: 15px;
-        font-size: 0.85rem;
-        display: block;
-      }
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-      &__item {
-        margin: 8px 0;
-        font-size: 0.95rem;
-        line-height: 1.5;
-        padding-left: 15px;
-        position: relative;
-        &:before {
-          content: '▹';
-          position: absolute;
-          left: 0;
-          color: $accent;
-          font-size: 1.1rem;
-          line-height: 1.4;
-        }
-      }
+    .tag {
+      background: var(--paper);
+      box-shadow: inset 0 0 0 1px var(--accent-line);
     }
   }
 }

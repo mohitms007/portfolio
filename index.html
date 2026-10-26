@@ -2,14 +2,15 @@
 layout: default
 ---
 
-<div id="site">
-  {% include switch.html %}
-  {% include intro.html %}
-  {% include background.html %}
-  {% include skills.html %}
-  {% include experience.html %}
-  {% include featured-projects.html %}
-  {% include other-projects.html %}
+<div class="shell">
+  {% include topbar.html %}
+  <main class="panel">
+    {% include hero.html %}
+    {% include featured-projects.html %}
+    {% include experience.html %}
+    {% include skills.html %}
+    {% include other-projects.html %}
+    {% include education.html %}
+  </main>
   {% include footer.html %}
-  {% include top-button.html %}
 </div>
