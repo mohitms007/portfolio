@@ -13,9 +13,19 @@
   justify-content: space-between;
   margin-bottom: 40px;
   &__name {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
     color: var(--text);
     font-weight: 500;
     text-decoration: none;
+  }
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 0 0 1px var(--border);
   }
 }
 
