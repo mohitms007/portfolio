@@ -1,29 +1,32 @@
 ---
 layout: post
 title: One month, one feature
-description: Shipping the iOS MVP of Nudge to 200 beta testers.
+description: How I built the iOS MVP of Nudge for 200 beta testers.
 ---
 
-Nudge is a budgeting app built around one idea: stop the purchase before it happens. I built the iOS MVP over the summer and got it to 200 beta testers in under a month.
+Nudge is a budgeting app. Its main function is to stop a purchase before it occurs. I built the iOS MVP in the summer of 2025–26. In less than one month, 200 beta testers used it.
 
-Most budgeting apps tell you what you spent. By then it's done. We wanted to step in when someone opens the app they overspend in.
+Most budgeting apps show what you spent. At that time, the money is already gone. Nudge stops the user when they open an app where they usually spend too much.
 
-## The API that makes it possible
+## The API
 
-Apple's Screen Time API can do this. FamilyControls asks for permission and lets the person pick the apps to limit. ManagedSettings puts a shield over them.
+The Apple Screen Time API makes this possible. FamilyControls asks the user for permission. Then the user selects the apps to limit. ManagedSettings puts a shield on those apps.
 
-Two things shaped the product more than I expected. The app never learns which apps were picked. It gets opaque tokens and nothing else. And Apple has to approve the Family Controls entitlement before you can ship it.
+Two rules of this API had a large effect on the design:
 
-Both are good for users. Both mean you design around what you're not allowed to know.
+- The app does not know which apps the user selected. It gets only opaque tokens.
+- Apple must approve the Family Controls entitlement before you can release the app.
 
-## Keep the clever part small
+These rules protect the user. They also limit the data that the app can use. We designed the product within these limits.
 
-The AI part is small on purpose. Spending data goes to a FastAPI service on AWS, which uses the OpenAI API to spot patterns and write recommendations and alerts.
+## The AI part
 
-The app is native SwiftUI, and the backend is thin. A month isn't long enough to be clever in two places.
+The AI part is small. The app sends spending data to a FastAPI service on AWS. The service uses the OpenAI API to find patterns. Then it writes recommendations and alerts.
 
-## What a month buys you
+The app uses native SwiftUI, and the backend is small. One month is not sufficient time to build two complex systems.
 
-It doesn't buy polish. It buys real people using the thing. The product was accepted into Antler Launchpad, and Monash IT News covered it.
+## Result
 
-Ship the one thing only your app can do. Keep everything else boring.
+The product went into Antler Launchpad. Monash IT News wrote an article about it.
+
+Build the one function that only your app can do. Keep the other parts simple.
